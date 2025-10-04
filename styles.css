@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-nav__list {
+    display: flex;
+    border-bottom: 1px solid gainsboro;
+    align-items: baseline;
+    
+}
+
+.links {
+   margin-left: auto;
+   margin-right: 100px;
+   font-size: large;
+   word-spacing: 8px;
+}
+
+.links a {
+    color:black;
+    padding: 13px 13px;
+    text-decoration: none;
+}
+.links a:hover {
+    background-color: #F2DC5D;
+}
