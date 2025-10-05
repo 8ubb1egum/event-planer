@@ -24,5 +24,11 @@ form.addEventListener('submit', function(e) {
         ${descr}
     `;
     eventList.appendChild(li);
+
+    // <p>-Tag "Keine Events" entfernen
+    const noEvents = document.getElementById('no-events');
+    if (noEvents)
+        noEvents.remove();
+
     form.reset();
 });
