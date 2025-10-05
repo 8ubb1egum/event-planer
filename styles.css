@@ -50,9 +50,9 @@ body {
     border-color: gainsboro;
     border-width: 2px;
     border-radius: 6px;
-    font-size: medium;
+    font-size: small;
     padding: 8px;
-    padding: 10px;
+    padding: 14px;
 }
 
 #date {
@@ -61,11 +61,11 @@ body {
     border-color: gainsboro;
     border-width: 2px;
     border-radius: 6px;
-    font-size: medium;
+    font-size: small;
     width: 100%;
     margin-top: 10px;
     height: 35px;
-    padding: 10px;
+    padding: 14px;  
 }
 
 #description {
@@ -74,11 +74,11 @@ body {
     border-color: gainsboro;
     border-width: 2px;
     border-radius: 6px;
-    font-size: large;
+    font-size: small;
     width: 100%;
     margin-top: 10px;
     height: 70px;
-    padding: 10px;
+    padding: 14px;
 }
 
 #add-button {
@@ -117,6 +117,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
+    font-size: 14px;
 }
 
 #search-input{
@@ -127,6 +128,7 @@ body {
     border-color: gainsboro;
     border-radius: 4px;
     font-size: 11px;
+    border-style: solid;
 }
 
 #sort-select{
@@ -137,7 +139,13 @@ body {
     border-color: gainsboro;
     border-radius: 4px;
     font-size: 11px;
+}
 
+.list-controls{
+    display:flex;
+    gap:5px;
+    align-items: center;
+    white-space: nowrap;
 }
 
 .site-footer{
@@ -148,5 +156,4 @@ body {
     padding-bottom: 8px;
     font-size:small;
     margin-top: 15px;
-
 }
