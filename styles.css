@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: auto;
     margin-right: auto;
     width: 45%;
@@ -14,6 +14,7 @@ body {
 .link-main {
     margin-left: auto;
     font-size: large;
+    font-weight: 500;
     word-spacing: 8px;
 }
 
@@ -30,6 +31,7 @@ body {
     margin-left: auto;
     margin-right: 100px;
     font-size: large;
+    font-weight: 500;
     word-spacing: 8px;
 }
 
@@ -43,51 +45,55 @@ body {
     background-color: #F2DC5D;
 }
 
+#new-event-heading {
+    font-weight: 500;
+}
+
 #title {
     width:100%;
+    height: 40px;
     box-sizing: border-box;
     border-style: solid;
     border-color: gainsboro;
     border-width: 2px;
     border-radius: 6px;
     font-size: small;
-    padding: 8px;
-    padding: 14px;
+    padding: 10px;
 }
 
 #date {
+    width: 100%;
+    height: 40px;
     box-sizing: border-box;
     border-style: solid;
     border-color: gainsboro;
     border-width: 2px;
     border-radius: 6px;
     font-size: small;
-    width: 100%;
-    margin-top: 10px;
-    height: 35px;
-    padding: 14px;  
+    padding: 14px; 
+    margin-top: 10px; 
 }
 
 #description {
+    width: 100%;
+    height: 70px;
     box-sizing: border-box;
     border-style: solid;
     border-color: gainsboro;
     border-width: 2px;
     border-radius: 6px;
     font-size: small;
-    width: 100%;
-    margin-top: 10px;
-    height: 70px;
     padding: 14px;
+    margin-top: 10px;
 }
 
 #add-button {
+    width: 100%;
+    height: 35px;
     background-color: black;
     color: white;
-    font-size: medium;
-    width: 100%;
+    font-size: small;
     margin-top: 10px;
-    height: 40px;
     border-style: solid;
     border-color: black;
     border-radius: 6px;
@@ -121,24 +127,24 @@ body {
 }
 
 #search-input{
-    width: 100%;
-    height: 30px;
-    padding-left: 7px;
+    width: 25%;
+    height: 35px;
+    padding-left: 10px;
     margin-top: 5px;
     border-color: gainsboro;
     border-radius: 4px;
-    font-size: 11px;
+    font-size: small;
     border-style: solid;
 }
 
 #sort-select{
-    width: 100%;
-    height: 30px;
-    padding-left: 7px;
+    width: 20%;
+    height: 35px;
+    padding-left: 10px;
     margin-top: 5px;
     border-color: gainsboro;
     border-radius: 4px;
-    font-size: 11px;
+    font-size: small;
 }
 
 .list-controls{
@@ -150,10 +156,11 @@ body {
 
 .site-footer{
     text-align: center;
-    color: gainsboro;
-    border-top: 1px solid;
+    color: rgb(163, 163, 163);
+    border-top: 1px solid gainsboro;
     padding-top: 8px;
     padding-bottom: 8px;
-    font-size:small;
+    font-size: small;
+    font-weight: bold;
     margin-top: 15px;
 }

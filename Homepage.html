@@ -15,7 +15,7 @@
     <nav class="main-nav" aria-label="Hauptnavigation">
       <h1>🎉Event-Planer</h1>
       <div class="link-main">
-        <a href="Homepage.html">Startseite</a>
+        <a href="Homepage.html">Start</a>
         <a href="kontakt.html">Kontakt</a>
       </div>
     </nav>
@@ -24,7 +24,7 @@
   <main class="site-main container">
     
     <section class="new-event">
-      <h2 id="event-form-heading">Neues Event erstellen</h2>
+      <h2 id="new-event-heading">Neues Event erstellen</h2>
       <form id="event-form" class="event-form" autocomplete="off">
         <div class="form-row">
           <input type="text" id="title" name="title" required placeholder="Titel" />
@@ -49,18 +49,18 @@
     <section class="event-list" aria-labelledby="events-heading">  
 
       <div class="list-controls">
-        <label for="sort-select" class="visually-hidden">Sortieren nach:</label>
-        <select id="sort-select" aria-label="Sortieroptionen">
-          <option value="date-asc">Datum (aufsteigend)</option>
-          <option value="date-desc">Datum (absteigend)</option>
+        <label for="sort-select">Sortieren nach:</label>
+        <select id="sort-select">
+          <option value="date-asc">Datum aufsteigend</option>
+          <option value="date-desc">Datum absteigend</option>
           <option value="title-asc">Titel A–Z</option>
           <option value="title-desc">Titel Z–A</option>
         </select>
         
-        <input id="search-input" type="search" placeholder="Suche (Titel oder Beschreibung)" />
+        <input id="search-input" type="search" placeholder="Suchen..." />
       </div>
 
-      <ul id="events-list" class="events-list" aria-live="polite"></ul>
+      <ul id="events-list" class="events-list"></ul>
 
       <p id="no-events" class="no-events">Keine Events vorhanden. Wird Zeit dass Sie sich eins Anlegen.</p>
     </section>
@@ -72,7 +72,7 @@
     </div>
   </footer>
 
-  <script src="js/app.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
 
