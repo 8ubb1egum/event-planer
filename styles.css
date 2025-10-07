@@ -166,3 +166,7 @@ body {
     font-weight: bold;
     margin-top: 15px;
 }
+
+#events-list{
+    list-style-type: none;
+}
