@@ -39,6 +39,10 @@ form.addEventListener('submit', function(e) {
     if (noEvents)
         noEvents.remove();
 
+    // Sortierung nach aktuellem Auswahlwert
+    let sortValue = sortSelect.value; 
+    sortEvents(sortValue);
+
     form.reset();
 });
 
