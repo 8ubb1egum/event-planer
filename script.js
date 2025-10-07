@@ -16,13 +16,15 @@ form.addEventListener('submit', function(e) {
     let date = dateInput.value;
     let descr = descrInput.value;
 
-    let newEvent = {title, date, descr};
+    // Date-Objekt erstellen und deutsches Kurzformat ausgeben
+    let dateObj = new Date(date);
+    let dateFormatted = dateObj.toLocaleDateString("de-DE");
 
     // Event in der <ul> als <li> einfügen
     const li = document.createElement('li');
     li.innerHTML = `
         <span style="font-size:1.2em"><strong>${title}</strong></span><br>
-        <strong>Datum: </strong>${date}<br>
+        <strong>Datum: </strong>${dateFormatted}<br>
         ${descr}
     `;
 
