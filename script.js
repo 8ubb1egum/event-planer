@@ -1,4 +1,4 @@
-// Gruppe: Bennebach, Gertje, Doberstein, Kraus, Öz auch bekannt als die SLAYER
+// Gruppe: Bennebach, Gertje, Doberstein, Kraus, Öz
 
 const form = document.getElementById('event-form'); // für Event-Listener
 const titleInput = document.getElementById('title');
