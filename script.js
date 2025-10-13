@@ -84,3 +84,42 @@ function sortEvents(curSel) {
     list.innerHTML = "";
     eventItems.forEach(item => list.appendChild(item));
 }
+
+// Suchfeld referenzieren
+const searchInput = document.getElementById('search-input');
+
+// Wenn sich der Eingabetext ändert, Suche ausführen
+searchInput.addEventListener('input', function () {
+    const query = this.value.trim().toLowerCase();
+    const list = document.getElementById('events-list');
+    const items = list.querySelectorAll('li');
+    let anyVisible = false;
+
+    items.forEach(li => {
+        const title = li.dataset.title.toLowerCase();
+        const descr = li.dataset.descr.toLowerCase();
+        const date = li.dataset.date.toLowerCase();
+
+        // prüfen, ob Suchbegriff vorkommt (in Titel, Beschreibung oder Datum)
+        if (title.includes(query) || descr.includes(query) || date.includes(query)) {
+            li.style.display = '';   // sichtbar
+            anyVisible = true;
+        } else {
+            li.style.display = 'none'; // ausblenden
+        }
+    });
+
+    // Falls keine Treffer sichtbar sind, eine Meldung anzeigen
+    const existingMsg = document.getElementById('no-results');
+    if (existingMsg) existingMsg.remove();
+
+    if (!anyVisible && query !== '') {
+        const msg = document.createElement('p');
+        msg.id = 'no-results';
+        msg.textContent = 'Keine passenden Events gefunden.';
+        msg.style.color = 'gray';
+        msg.style.fontStyle = 'italic';
+        msg.style.marginTop = '10px';
+        list.insertAdjacentElement('afterend', msg);
+    }
+});
