@@ -12,9 +12,9 @@ form.addEventListener('submit', function(e) {
     e.preventDefault(); // Neuladen vermeiden
 
     // Event-Objekt erzeugen
-    let title = titleInput.value;
+    let title = titleInput.value.trim();
     let date = dateInput.value;
-    let descr = descrInput.value;
+    let descr = descrInput.value.trim();
 
     // Date-Objekt erstellen und deutsches Kurzformat ausgeben
     let dateObj = new Date(date);
