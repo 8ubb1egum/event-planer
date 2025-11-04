@@ -1,53 +1,32 @@
 <!-- Gruppe: Bennebach, Gertje, Doberstein, Kraus, Öz -->
+
 <!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>🎉Event-Planer — Startseite</title>
-  
-  <link rel="stylesheet" href="styles.css" />
-
-  
+  <link rel="stylesheet" href="styleHomepage.css" />
 </head>
 <body>
   <header>
-    <nav class="main-nav">
       <h1>🎉Event-Planer</h1>
-      <div class="link-main">
+      <div class="navigation">
         <a href="Homepage.html">Start</a>
         <a href="kontakt.html">Kontakt</a>
       </div>
-    </nav>
   </header>
-
-  <main class="site-main container">
-    
+  <main>
     <section class="new-event">
       <h2 id="new-event-heading">Neues Event erstellen</h2>
-      <form id="event-form" class="event-form" autocomplete="off">
-        <div class="form-row">
+      <form id="event-form" class="event-form">
           <input type="text" id="title" name="title" required placeholder="Titel" />
-        </div>
-
-        <div class="form-row">
           <input type="date" id="date" name="date" required />
-        </div>
-
-        <div class="form-row">
           <textarea id="description" name="description" rows="4" required placeholder="Beschreibung"></textarea>
-        </div>
-
-        <div class="form-actions">
           <button type="submit" id="add-button" class="btn">Hinzufügen</button>
-        </div>
-
-        <p id="form-error" class="form-error" aria-live="polite"></p>
       </form>
     </section>
-
-    <section class="event-list">  
-
+    <section class="show-event">  
       <div class="list-controls">
         <label for="sort-select">Sortieren nach:</label>
         <select id="sort-select">
@@ -56,22 +35,15 @@
           <option value="title-asc">Titel A–Z</option>
           <option value="title-desc">Titel Z–A</option>
         </select>
-        
         <input id="search-input" type="search" placeholder="Suchen..." />
       </div>
-
       <ul id="events-list" class="events-list"></ul>
-
-      <p id="no-events" class="no-events">Keine Events vorhanden. Wird Zeit dass Sie sich eins Anlegen.</p>
+      <p id="no-events" class="no-events">Keine Events vorhanden.</p>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
+  <footer>
       <small>© 2025 Event-Planer</small>
-    </div>
   </footer>
-
   <script src="script.js" defer></script>
 </body>
 </html>

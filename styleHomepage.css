@@ -7,43 +7,31 @@ body {
     width: 45%;
 }
 
-.main-nav {
+header {
     display: flex;
     border-bottom: 1px solid gainsboro;
     align-items: baseline;
 }
 
-.link-main {
+h1 {
+    margin-left: 20px;
+}
+
+.navigation {
     margin-left: auto;
+    margin-right: 20px;
     font-size: large;
     font-weight: 500;
     word-spacing: 8px;
 }
 
-.link-main a {
-    color:black;
-    padding: 13px 13px;
-    text-decoration: none;
-}
-.link-main a:hover {
-    background-color: #F2DC5D;
-}
-
-.link-contact {
-    margin-left: auto;
-    margin-right: 100px;
-    font-size: large;
-    font-weight: 500;
-    word-spacing: 8px;
-}
-
-.link-contact a {
+.navigation a {
     color:black;
     padding: 13px 13px;
     text-decoration: none;
 }
 
-.link-contact a:hover {
+.navigation a:hover {
     background-color: #F2DC5D;
 }
 
@@ -96,6 +84,7 @@ body {
     color: white;
     font-size: small;
     margin-top: 10px;
+    margin-bottom: 20px;
     border-style: solid;
     border-color: black;
     border-radius: 6px;
@@ -114,7 +103,7 @@ body {
     padding-right: 20px;
 }
 
-.event-list {
+.show-event {
     border-width: 2px;
     border-style: solid;
     border-color: gainsboro;
@@ -142,7 +131,7 @@ body {
 #sort-select{
     width: 20%;
     height: 35px;
-    padding-left: 10px;
+    padding-left: 7px;
     margin-top: 5px;
     border-color: gainsboro;
     border-radius: 4px;
@@ -156,7 +145,12 @@ body {
     white-space: nowrap;
 }
 
-.site-footer{
+#events-list{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer{
     text-align: center;
     color: rgb(163, 163, 163);
     border-top: 1px solid gainsboro;
@@ -165,9 +159,4 @@ body {
     font-size: small;
     font-weight: bold;
     margin-top: 15px;
-}
-
-#events-list{
-    list-style-type: none;
-    padding-left: 0;
 }

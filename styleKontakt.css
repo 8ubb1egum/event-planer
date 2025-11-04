@@ -1,0 +1,55 @@
+/* Gruppe: Bennebach, Gertje, Doberstein, Kraus, Öz */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+header {
+    display: flex;
+    border-bottom: 1px solid gainsboro;
+    align-items: baseline;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+.navigation {
+    margin-left: auto;
+    margin-right: 20px;
+    font-size: large;
+    font-weight: 500;
+    word-spacing: 8px;
+}
+
+.navigation a {
+    color:black;
+    padding: 13px 13px;
+    text-decoration: none;
+}
+
+.navigation  a:hover {
+    background-color: #F2DC5D;
+}
+
+main {
+    margin-left: 20px;
+}
+
+.EmailAddress {
+    font-style: normal;
+}
+
+footer{
+    text-align: center;
+    color: rgb(163, 163, 163);
+    border-top: 1px solid gainsboro;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: small;
+    font-weight: bold;
+    margin-top: 15px;
+}
